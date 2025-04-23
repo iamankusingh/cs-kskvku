@@ -24,7 +24,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="p-1 lg:px-4 flex items-center justify-between md:flex-col lg:flex-row sticky top-0 bg-[#fba919] z-20">
+    <header className="p-1 lg:px-4 flex items-center justify-between md:flex-col lg:flex-row sticky top-0 bg-primary z-20">
       {/* logo and text */}
       <div className="flex items-center gap-1">
         <Image
