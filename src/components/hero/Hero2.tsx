@@ -4,10 +4,10 @@ import TextLine from "../TextLine";
 
 const Hero2 = () => {
   return (
-    <section className="text-center cursor-default">
+    <section className="py-4 text-center cursor-default">
       <TextLine text="Programs we offers" />
 
-      <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <Card
           heading="MSC (CA & IT)"
           title1="Under & Post Graduate"

@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Popins from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const popins = Popins({
+  src: "../fonts/Poppins-Light.ttf",
 });
 
 export const metadata: Metadata = {
@@ -30,11 +25,10 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" />
       </head>
 
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${popins.className} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

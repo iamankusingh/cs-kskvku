@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     { title: "Resources", path: "/resources" },
     { title: "Facilities", path: "/facilities" },
     { title: "Peoples", path: "/peoples" },
-    { title: "Contact us", path: "/contact" },
+    { title: "Contact", path: "/contact" },
   ];
 
   return (
@@ -37,13 +37,13 @@ const Header: React.FC = () => {
 
         <div>
           <Link href="/" className="cursor-default">
-            <h1 className="text-black text-lg md:text-xl">
+            <h1 className="text-black text-md md:text-xl">
               Department of Computer Science
             </h1>
           </Link>
 
           <a href="https://kskvku.ac.in" target="_blank">
-            <h2 className="text-black text-[.7rem] md:text-lg">
+            <h2 className="text-black text-[.7rem] md:text-sm">
               Krantiguru Shyamji Krishna Verma Kachchh University
             </h2>
           </a>
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
           {navigation.map((item, idx) => {
             return (
               <li key={idx} className="md:text-black text-2xl md:text-lg">
-                <Link href={item.path}>{item.title}</Link>
+                <Link href={item.path} className="hover:text-indigo-600 duration-300">{item.title}</Link>
               </li>
             );
           })}
