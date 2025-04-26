@@ -33,7 +33,7 @@ const Carousel: React.FC = () => {
     if (!autoSlide) return;
     const slideInterval = setInterval(next, autoSlideInterval);
     return () => clearInterval(slideInterval);
-  }, [autoSlide]);
+  });
 
   return (
     <div
@@ -47,7 +47,7 @@ const Carousel: React.FC = () => {
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {imagePath.map((data, idx) => {
-          return <Image src={data} alt="Glimps" key={idx} />;
+          return <Image src={data} alt="Glimps" key={idx} priority />;
         })}
       </div>
 

@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
+import { TransitionLink } from "./TransitionLink";
 
 interface NavigationItem {
   title: string;
@@ -36,11 +36,12 @@ const Header: React.FC = () => {
         />
 
         <div>
-          <Link href="/" className="cursor-default">
-            <h1 className="text-black text-md md:text-xl">
-              Department of Computer Science
-            </h1>
-          </Link>
+          <TransitionLink
+            href="/"
+            className="text-black text-md md:text-xl cursor-default"
+          >
+            <h1>Department of Computer Science</h1>
+          </TransitionLink>
 
           <a href="https://kskvku.ac.in" target="_blank">
             <h2 className="text-black text-[.7rem] md:text-sm">
@@ -83,8 +84,17 @@ const Header: React.FC = () => {
         <ul className="p-6 md:p-0 flex flex-col justify-center items-center space-y-6 md:flex-row md:space-x-6 md:space-y-0">
           {navigation.map((item, idx) => {
             return (
-              <li key={idx} className="md:text-black text-2xl md:text-lg">
-                <Link href={item.path} className="hover:text-indigo-600 duration-300">{item.title}</Link>
+              <li
+                key={idx}
+                className="md:text-black text-2xl md:text-lg"
+                onClick={() => setMenuOpen(false)}
+              >
+                <TransitionLink
+                  href={item.path}
+                  className="hover:text-indigo-600 duration-300"
+                >
+                  {item.title}
+                </TransitionLink>
               </li>
             );
           })}

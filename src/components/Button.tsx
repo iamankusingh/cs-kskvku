@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { TransitionLink } from "./TransitionLink";
 
 interface buttonPrope {
   title: string;
@@ -7,12 +7,12 @@ interface buttonPrope {
 
 const Button: React.FC<buttonPrope> = ({ title, path }) => {
   return (
-    <Link
+    <TransitionLink
       href={path}
-      className="p-2 border-2 border-primary border-xl rounded-lg hover:bg-primary duration-300 cursor-pointer"
+      className="p-2 border-2 border-primary border-xl rounded-lg hover:bg-primary active:bg-primary duration-300 cursor-pointer"
     >
       {title}
-    </Link>
+    </TransitionLink>
   );
 };
 

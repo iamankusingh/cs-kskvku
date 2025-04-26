@@ -21,6 +21,7 @@ const Hero3 = () => {
           The University&apos;s library is well equiped with latest books and
           magazines.
         </li>
+        <li>The University also provide hostel facility and mess service.</li>
         <li>
           We provide education and hands on experience in different IT
           companies.

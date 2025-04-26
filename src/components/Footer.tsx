@@ -1,6 +1,6 @@
-import Link from "next/link";
 import React from "react";
 import { FaInstagram, FaYoutube, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { TransitionLink } from "./TransitionLink";
 
 const Footer: React.FC = () => {
   return (
@@ -22,15 +22,15 @@ const Footer: React.FC = () => {
             </li>
 
             <li>
-              <Link href="/programs" className="hover:underline">
+              <TransitionLink href="/programs" className="hover:underline">
                 Career Options
-              </Link>
+              </TransitionLink>
             </li>
 
             <li>
-              <Link href="/" className="hover:underline">
+              <TransitionLink href="/" className="hover:underline">
                 Fees Structure
-              </Link>
+              </TransitionLink>
             </li>
           </ul>
         </div>
