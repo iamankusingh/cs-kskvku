@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import CarrerOption from "@/components/CarrerOption";
 import ProgramCard from "@/components/ProgramCard";
 import TextLine from "@/components/TextLine";
@@ -19,7 +20,9 @@ const Programs: React.FC = () => {
           li2="Under and Post Graduate"
           li3="5 year Program"
           li4="Eligibility: HSC or 10+2 in Science or Commerce stream from a recognized board with minimum 40% marks."
-        />
+        >
+          <Button title="View Sllybus" path="/courses" />
+        </ProgramCard>
 
         <ProgramCard
           heading="MSC (IT)"
@@ -30,7 +33,9 @@ const Programs: React.FC = () => {
           li2="Post Graduate"
           li3="2 year Program"
           li4="Eligibility: BCA, B.Sc. (IT), B.Tech. (IT/CE/CSE) degree from recognized university with minimum 40% marks."
-        />
+        >
+          <Button title="View Sllybus" path="/courses" />
+        </ProgramCard>
 
         <ProgramCard
           heading="PGDCA"
@@ -41,7 +46,10 @@ const Programs: React.FC = () => {
           li2="Post Graduate"
           li3="1 year Program"
           li4="Eligibility: Graduate degree from a recognized university with minimum 40% marks."
-        />
+        >
+          <Button title="View Sllybus" path="/courses" />
+        </ProgramCard>
+
         <ProgramCard
           heading="BS in CS"
           p1="The Bachelor of Science in Computer Science (B.Sc. CS) is an NEP 2024-based undergraduate program that equips students with fundamental and advanced computing skills. The curriculum covers programming, algorithms, software development, AI, cybersecurity, cloud computing, and blockchain, ensuring a strong theoretical and practical foundation."
@@ -51,7 +59,10 @@ const Programs: React.FC = () => {
           li2="Under Graduate"
           li3="4 year Program"
           li4="Eligibility: HSC or 10+2 in Science or Commerce stream from a recognized board with minimum 40% marks."
-        />
+        >
+          <Button title="View Sllybus" path="/courses" />
+        </ProgramCard>
+
         <ProgramCard
           heading="PHD"
           p1="The Ph.D. in Computer Science is a research-driven program for those passionate about technology, innovation, and problem-solving. It covers advanced computing, AI, machine learning, cybersecurity, blockchain, quantum computing, and data science, preparing scholars for impactful contributions in academia, industry, and research."
@@ -61,7 +72,9 @@ const Programs: React.FC = () => {
           li2="Doctrate"
           li3="3 to 6 year"
           li4="Eligibility: Masters degree from a recognized university with minimum 60% marks."
-        />
+        >
+          <Button title="Contact us" path="/contact" />
+        </ProgramCard>
       </div>
 
       <div>
