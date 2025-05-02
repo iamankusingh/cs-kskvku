@@ -39,3 +39,7 @@ body {
   transform: translateY(40px);
   filter: blur(12px);
 }
+
+a:hover {
+  text-decoration: underline;
+}

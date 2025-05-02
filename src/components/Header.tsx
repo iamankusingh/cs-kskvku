@@ -58,17 +58,17 @@ const Header: React.FC = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <div
-            className={`h-1 w-full origin-right duration-300 bg-black ${
+            className={`h-[2px] w-full origin-right duration-300 bg-black ${
               menuOpen ? "-rotate-35" : ""
             }`}
           ></div>
           <div
-            className={`h-1 w-full origin-right duration-300 bg-black ${
+            className={`h-[2px] w-full origin-right duration-300 bg-black ${
               menuOpen ? "opacity-0" : ""
             }`}
           ></div>
           <div
-            className={`h-1 w-full origin-right duration-300 bg-black ${
+            className={`h-[2px] w-full origin-right duration-300 bg-black ${
               menuOpen ? "rotate-35" : ""
             }`}
           ></div>

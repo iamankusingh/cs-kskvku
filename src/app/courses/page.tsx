@@ -6,7 +6,7 @@ import React from "react";
 
 const Courses: React.FC = () => {
   return (
-    <main className="p-4 lg:px-8  text-center">
+    <main className="p-4 lg:px-8 text-center">
       <TextLine text="Courses in Programs" />
 
       <div className="text-left grid lg:grid-cols-2 gap-4">
