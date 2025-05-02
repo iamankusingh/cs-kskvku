@@ -17,7 +17,9 @@ const ResourceCard: React.FC<resourceCardProps> = ({
     >
       <h3 className="pb-4 text-2xl cursor-default">{header}</h3>
 
-      <div className="flex flex-col">{children}</div>
+      <div id="a" className="flex flex-col">
+        {children}
+      </div>
     </div>
   );
 };

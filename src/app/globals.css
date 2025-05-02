@@ -40,6 +40,6 @@ body {
   filter: blur(12px);
 }
 
-a:hover {
-  text-decoration: underline;
+#a a:hover {
+  @apply underline;
 }

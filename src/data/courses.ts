@@ -51,6 +51,73 @@ const cait: Course[] = [
     "CAIT-406-B": "Cyber Security",
     "CAIT-407-P": "Practical Skills in Linux",
   },
+  {
+    CCCS517: "Internet Programming with JAVA",
+    CCCS518: "Computer Network - I",
+    CCCS519: "Practical Based on CCCS517",
+    CCCS520: "Practical / Viva Voce Based on CCCS518 and elective if any",
+    FCCS506: "Soft Skills and Personality Development",
+    CECS510: "Information Security",
+    CECS511: "E-Commerce and M-Commerce",
+  },
+  {
+    CCCS621: "Web Application development using PHP",
+    CCCS622: "Computer Network-II",
+    CCCS623: "Practical Based on CCCS621",
+    CCCS624: "Practical and Viva Voce Based on CCCS622 and Elective Courses",
+    CCCS625: "Project",
+    CECS612: "Computer Graphics and Multimedia",
+    CECS613: "Software Engineering",
+  },
+  {
+    CCCS726: "Advanced Web Programming",
+    CCCS727: "Mobile Computing",
+    CCCS728: "Data warehousing and Data mining",
+    CCCS729: "Practical Based on CCCS726",
+    CCCS730: "Practical Based on CCCS727",
+    CECS714: "System Software",
+    CECS715: "Enterprise resource planning",
+  },
+  {
+    CCCS831: "Advanced Java Programming",
+    CCCS832: "Cryptography",
+    CCCS833: "Artificial Intelligence",
+    CCCS834: "Practical Based on CCCS831",
+    CCCS835: "Practical Based on CCCS833 and Elective Courses",
+    CECS816: "Embedded System",
+    CECS817: "Optimization Techniques",
+  },
+  {
+    CCCS936: "Data Science",
+    CCCS937: "Advanced Networking",
+    CCCS938: "Practical Based on CCCS936",
+    CCCS939: "Practical / Viva Voce Based on CCCS937 and Elective Courses",
+    CECS918: "Research Methodology",
+    CECS919: "Software Testing and Quality Assurance",
+  },
 ];
 
-export { cait };
+const pgdca: Course[] = [
+  {
+    CCCS101: "Computer Fundamental and  PC Software",
+    CCCS102: "Computer Programming Using C",
+    CCCS103: "Practical Based on  CCCS101",
+    CCCS104: "Practical Based on  CCCS102 and Elective Courses",
+    CECS101: "Multimedia Application Development",
+    CECS102: "System Analysis and Design",
+    CECS103: "Desktop Publishing",
+    CECS104: "Personality Development and Soft Skills",
+  },
+  {
+    CCCS205: "Windows Programming using VB.NET",
+    CCCS206: "Database Management System",
+    CCCS207: "Practical Based on  PG CCCS205",
+    CCCS208: "Practical Based on  PG CCCS206 and Elective Courses",
+    CECS205: "Internet and Web Programming",
+    CECS206: "Cyber Security",
+    CECS207: "MIS and ERP",
+    CECS208: "Data Communication and Computer Network",
+  },
+];
+
+export { cait, pgdca };

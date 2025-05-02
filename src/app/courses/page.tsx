@@ -1,6 +1,6 @@
 import CourseCard from "@/components/CourseCard";
 import TextLine from "@/components/TextLine";
-import { cait } from "@/data/courses";
+import { cait, pgdca } from "@/data/courses";
 import { Metadata } from "next";
 import React from "react";
 
@@ -48,42 +48,97 @@ const Courses: React.FC = () => {
               </div>
             ))}
           </CourseCard>
+
+          <CourseCard sem={5}>
+            {Object.keys(cait[4]).map((key, index) => (
+              <div className="py-1 flex" key={index}>
+                <span className="w-36">{key}</span>
+                <p className="w-full text-left">{cait[4][key]}</p>
+              </div>
+            ))}
+          </CourseCard>
+
+          <CourseCard sem={6}>
+            {Object.keys(cait[5]).map((key, index) => (
+              <div className="py-1 flex" key={index}>
+                <span className="w-36">{key}</span>
+                <p className="w-full text-left">{cait[5][key]}</p>
+              </div>
+            ))}
+          </CourseCard>
+
+          <CourseCard sem={7}>
+            {Object.keys(cait[6]).map((key, index) => (
+              <div className="py-1 flex" key={index}>
+                <span className="w-36">{key}</span>
+                <p className="w-full text-left">{cait[6][key]}</p>
+              </div>
+            ))}
+          </CourseCard>
+
+          <CourseCard sem={8}>
+            {Object.keys(cait[7]).map((key, index) => (
+              <div className="py-1 flex" key={index}>
+                <span className="w-36">{key}</span>
+                <p className="w-full text-left">{cait[7][key]}</p>
+              </div>
+            ))}
+          </CourseCard>
+
+          <CourseCard sem={9}>
+            {Object.keys(cait[8]).map((key, index) => (
+              <div className="py-1 flex" key={index}>
+                <span className="w-36">{key}</span>
+                <p className="w-full text-left">{cait[8][key]}</p>
+              </div>
+            ))}
+          </CourseCard>
+
+          <CourseCard sem={10}>
+            <div>
+              <p className="p-4 text-xl text-center">
+                Industrial Project or Internship
+              </p>
+            </div>
+          </CourseCard>
         </div>
 
         <div>
           <h3 className="py-4">MSC ( IT ) :</h3>
 
           <CourseCard sem={1}>
-            {Object.keys(cait[0]).map((key, index) => (
+            {Object.keys(cait[6]).map((key, index) => (
               <div className="py-1 flex" key={index}>
                 <span className="w-36">{key}</span>
-                <p className="w-full text-left">{cait[0][key]}</p>
+                <p className="w-full text-left">{cait[6][key]}</p>
               </div>
             ))}
           </CourseCard>
 
           <CourseCard sem={2}>
-            {Object.keys(cait[1]).map((key, index) => (
+            {Object.keys(cait[7]).map((key, index) => (
               <div className="py-1 flex" key={index}>
                 <span className="w-36">{key}</span>
-                <p className="w-full text-left">{cait[1][key]}</p>
+                <p className="w-full text-left">{cait[7][key]}</p>
               </div>
             ))}
           </CourseCard>
 
           <CourseCard sem={3}>
-            {Object.keys(cait[2]).map((key, index) => (
+            {Object.keys(cait[8]).map((key, index) => (
               <div className="py-1 flex" key={index}>
                 <span className="w-36">{key}</span>
-                <p className="w-full text-left">{cait[2][key]}</p>
+                <p className="w-full text-left">{cait[8][key]}</p>
               </div>
             ))}
           </CourseCard>
 
           <CourseCard sem={4}>
-              <div>
-                <p className="p-4 text-xl text-center">Industrial Project or Internship</p>
-              </div>
+            <div>
+              <p className="p-4 text-xl text-center">
+                Industrial Project or Internship
+              </p>
+            </div>
           </CourseCard>
         </div>
 
@@ -91,19 +146,19 @@ const Courses: React.FC = () => {
           <h3 className="py-4">PGDCA :</h3>
 
           <CourseCard sem={1}>
-            {Object.keys(cait[0]).map((key, index) => (
+            {Object.keys(pgdca[0]).map((key, index) => (
               <div className="py-1 flex" key={index}>
                 <span className="w-36">{key}</span>
-                <p className="w-full text-left">{cait[0][key]}</p>
+                <p className="w-full text-left">{pgdca[0][key]}</p>
               </div>
             ))}
           </CourseCard>
 
           <CourseCard sem={2}>
-            {Object.keys(cait[1]).map((key, index) => (
+            {Object.keys(pgdca[1]).map((key, index) => (
               <div className="py-1 flex" key={index}>
                 <span className="w-36">{key}</span>
-                <p className="w-full text-left">{cait[1][key]}</p>
+                <p className="w-full text-left">{pgdca[1][key]}</p>
               </div>
             ))}
           </CourseCard>
