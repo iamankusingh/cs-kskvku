@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
             </li>
 
             <li>
-              <TransitionLink href="/" className="hover:underline">
+              <TransitionLink href="/fees" className="hover:underline">
                 Fees Structure
               </TransitionLink>
             </li>

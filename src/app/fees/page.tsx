@@ -2,18 +2,18 @@ import TextLine from "@/components/TextLine";
 import { Metadata } from "next";
 import React from "react";
 
-const Contact: React.FC = () => {
+const Fees: React.FC = () => {
   return (
     <main className="p-6 lg:px-8  text-center">
-      <TextLine text="Contact us" />
+      <TextLine text="Fees Structure" />
     </main>
   );
 };
 
 export const metadata: Metadata = {
-  title: "Contact us: Department of Computer Science | KSKVKU",
+  title: "Fees-Structure: Department of Computer Science | KSKVKU",
   description:
     "Prototype Website of Department of computer Science at Krantiguru Shyamji Krishna verma Kachchh university",
 };
 
-export default Contact;
+export default Fees;
