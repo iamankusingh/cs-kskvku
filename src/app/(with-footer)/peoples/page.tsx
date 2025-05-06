@@ -1,7 +1,7 @@
 import TextLine from "@/components/TextLine";
 import { Metadata } from "next";
 import React from "react";
-import hod from "../../assets/1.jpg";
+import hod from "@/assets/1.jpg";
 import Image from "next/image";
 import PeopleCard from "@/components/PeopleCard";
 

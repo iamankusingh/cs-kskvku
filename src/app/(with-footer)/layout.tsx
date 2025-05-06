@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Popins from "next/font/local";
-import "./globals.css";
+import ".././globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const popins = Popins({
-  src: "../fonts/Poppins-Light.ttf",
+  src: "../../fonts/Poppins-Light.ttf",
 });
 
 export const metadata: Metadata = {
