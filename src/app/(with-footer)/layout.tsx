@@ -4,6 +4,7 @@ import ".././globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// main fonts
 const popins = Popins({
   src: "../../fonts/Poppins-Light.ttf",
 });
@@ -12,6 +13,21 @@ export const metadata: Metadata = {
   title: "Department of Computer Science | KSKVKU",
   description:
     "Prototype Website of Department of computer Science at Krantiguru Shyamji Krishna verma Kachchh university",
+  keywords: [
+    "department of computer science",
+    "kskvku",
+    "kachchh university",
+    "computer science kachchh",
+    "mac ca it",
+    "msc it",
+    "pgdca",
+    "bs in cs",
+    "batchlor of science in computer science",
+    "phd in computer science",
+    "it colleg in kachchh",
+  ],
+  authors: [{ name: "Anku Singh", url: "https://github.com/iamankusingh" }],
+  creator: "Anku Singh",
 };
 
 export default function RootLayout({

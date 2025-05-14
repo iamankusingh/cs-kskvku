@@ -1,7 +1,7 @@
 import TextLine from "@/components/TextLine";
 import { Metadata } from "next";
 import React from "react";
-import hod from "@/assets/1.jpg";
+import image from "@/assets/person.png";
 import Image from "next/image";
 import PeopleCard from "@/components/PeopleCard";
 
@@ -10,10 +10,10 @@ const Peoples: React.FC = () => {
     <main className="p-6 lg:px-8 text-center cursor-default">
       <TextLine text="Peoples" />
 
-      {/* hod */}
+      {/* hod sir */}
       <div className="p-4">
         <Image
-          src={hod}
+          src={image}
           alt="HOD sir"
           className="h-48 w-auto mx-auto aspect-square rounded-lg"
         />
@@ -21,16 +21,17 @@ const Peoples: React.FC = () => {
         <p>(Head of Department)</p>
       </div>
 
+      {/* rest of faculties */}
       <div className="md:p-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <PeopleCard img={hod} name="Manish Dasotiya" role="Lab Admin" />
-        <PeopleCard img={hod} name="Parth Thacker" role="Professor" />
-        <PeopleCard img={hod} name="Drasti Goswami" role="Professor" />
-        <PeopleCard img={hod} name="Rita" role="Professor" />
-        <PeopleCard img={hod} name="Sachin Doru" role="Professor" />
-        <PeopleCard img={hod} name="Neeraj Macchar" role="Professor" />
-        <PeopleCard img={hod} name="Jay Joshi" role="Professor" />
-        <PeopleCard img={hod} name="Manish Bhai" role="Peon" />
-        <PeopleCard img={hod} name="Khyati Ben" role="Clerk" />
+        <PeopleCard img={image} name="Manish Dasotiya" role="Lab Admin" />
+        <PeopleCard img={image} name="Parth Thacker" role="Professor" />
+        <PeopleCard img={image} name="Drasti Goswami" role="Professor" />
+        <PeopleCard img={image} name="Rita" role="Professor" />
+        <PeopleCard img={image} name="Sachin Doru" role="Professor" />
+        <PeopleCard img={image} name="Neeraj Macchar" role="Professor" />
+        <PeopleCard img={image} name="Jay Joshi" role="Professor" />
+        <PeopleCard img={image} name="Manish Bhai" role="Peon" />
+        <PeopleCard img={image} name="Khyati Ben" role="Clerk" />
       </div>
     </main>
   );

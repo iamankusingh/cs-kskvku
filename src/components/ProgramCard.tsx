@@ -2,6 +2,7 @@ import React from "react";
 
 interface programCardProps {
   children: React.ReactNode;
+  id: string;
   heading: string;
   p1: string;
   p2: string;
@@ -14,6 +15,7 @@ interface programCardProps {
 
 const ProgramCard: React.FC<programCardProps> = ({
   children,
+  id,
   heading,
   p1,
   p2,
@@ -26,7 +28,8 @@ const ProgramCard: React.FC<programCardProps> = ({
 }) => {
   return (
     <div
-      className="p-5 text-left rounded-lg cursor-default main-card"
+      id={id}
+      className="h-fit p-5 text-left rounded-lg cursor-default main-card"
       {...props}
     >
       <h4 className="text-2xl font-bold">{heading}</h4>

@@ -4,6 +4,7 @@ import Hero3 from "@/components/hero/Hero3";
 
 export default function Home() {
   return (
+    // home page
     <main className="min-h-screen w-full">
       <Hero />
       <Hero2 />

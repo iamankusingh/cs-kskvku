@@ -41,13 +41,21 @@ const Carousel: React.FC = () => {
       onMouseEnter={() => setAutoSlide(false)}
       onMouseLeave={() => setAutoSlide(true)}
     >
-      {/* image */}
+      {/* image box */}
       <div
         className="flex transition-transform ease-out duration-400"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {imagePath.map((data, idx) => {
-          return <Image src={data} alt="Glimps" key={idx} priority />;
+          return (
+            <Image
+              src={data}
+              alt="Glimps"
+              key={idx}
+              priority
+              className="h-auto w-auto"
+            />
+          );
         })}
       </div>
 
@@ -68,7 +76,7 @@ const Carousel: React.FC = () => {
         </button>
       </div>
 
-      {/* dots */}
+      {/* bottom dots */}
       <div className="absolute bottom-4 right-0 left-0">
         <div className="flex items-center justify-center gap-2">
           {imagePath.map((_, i) => (

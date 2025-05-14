@@ -1,9 +1,11 @@
 import Button from "../Button";
 import Carousel from "../Carousel";
 
+// main hero
 const Hero = () => {
   return (
     <section className="pb-8 lg:pt-6 min-h-fit w-full flex flex-col items-center lg:justify-around lg:flex-row-reverse">
+      {/* main image slider */}
       <Carousel />
 
       <div className="text-center">

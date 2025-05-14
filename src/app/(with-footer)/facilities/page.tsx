@@ -73,8 +73,11 @@ const Facilities: React.FC = () => {
         </h4>
         <li className="pb-4">
           There are four hostels for students. Two is under university and two
-          is of Government. University&apos;s Hostel fees is Rs.3600 per
-          semester whthout mess charge.
+          is of Government. University&apos;s &nbsp;
+          <span className="underline">
+            Hostel fees is Rs.3600 per semester. Mess charge for boys is
+            approximately Rs.3,200 and girls mess is Rs.1,600.
+          </span>
         </li>
 
         <h4 className="py-2 text-xl">

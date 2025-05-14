@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             </li>
 
             <li>
-              <TransitionLink href="/programs" className="hover:underline">
+              <TransitionLink href="/programs#carrer-options" className="hover:underline">
                 Career Options
               </TransitionLink>
             </li>
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
           &copy; 2025 All Rights Reserved. Department of Computer Science, KSKV
           Kachchh University |{" "}
           <a
-            href="https://github.com/iamankusingh"
+            href="https://github.com/iamankusingh/cs-kskvku"
             target="_blank"
             className="hover:underline"
           >

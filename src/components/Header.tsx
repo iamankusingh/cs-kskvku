@@ -77,8 +77,8 @@ const Header: React.FC = () => {
 
       {/* links */}
       <nav
-        className={`md:h-fit w-screen md:w-fit absolute md:static md:block bg-slate-50 dark:bg-[#312f2f] md:bg-transparent md:dark:bg-transparent drop-shadow-2xl ${
-          menuOpen ? "top-16 right-0" : "hidden"
+        className={`md:h-fit w-screen md:w-fit absolute top-16 md:static md:block bg-slate-50 dark:bg-[#312f2f] md:bg-transparent md:dark:bg-transparent drop-shadow-2xl duration-300 ease-in-out ${
+          menuOpen ? "right-0" : "right-[100vw]"
         }`}
       >
         <ul className="p-6 md:p-0 flex flex-col justify-center items-center space-y-6 md:flex-row md:space-x-6 md:space-y-0">
@@ -91,7 +91,7 @@ const Header: React.FC = () => {
               >
                 <TransitionLink
                   href={item.path}
-                  className="hover:text-indigo-600 duration-300"
+                  className="hover:text-blue-600 duration-300"
                 >
                   {item.title}
                 </TransitionLink>

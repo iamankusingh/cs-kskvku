@@ -16,7 +16,7 @@ const Card: React.FC<cardProps> = ({
   path,
 }) => {
   return (
-    <div className="p-4 text-left rounded-lg hover:scale-105 duration-400 main-card">
+    <div className="w-full md:w-[350px] p-4 text-left rounded-lg hover:scale-105 duration-400 main-card">
       <h4 className="text-2xl">{heading}</h4>
 
       <ul className="py-6">

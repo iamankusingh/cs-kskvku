@@ -3,6 +3,8 @@ import Link, { LinkProps } from "next/link";
 import React from "react";
 import { useRouter } from "next/navigation";
 
+// page changing transition
+
 interface TransitionLinkProps extends LinkProps {
   children: React.ReactNode;
   href: string;
@@ -21,6 +23,7 @@ export const TransitionLink: React.FC<TransitionLinkProps> = ({
 }) => {
   const router = useRouter();
 
+  // main function
   const handleTransition = async (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
