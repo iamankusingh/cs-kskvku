@@ -5,10 +5,10 @@ import image from "@/assets/person.png";
 import Image from "next/image";
 import PeopleCard from "@/components/PeopleCard";
 
-const Peoples: React.FC = () => {
+const Faculties: React.FC = () => {
   return (
     <main className="p-6 lg:px-8 text-center cursor-default">
-      <TextLine text="Peoples" />
+      <TextLine text="Faculties" />
 
       {/* hod sir */}
       <div className="p-4">
@@ -25,8 +25,8 @@ const Peoples: React.FC = () => {
       <div className="md:p-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <PeopleCard img={image} name="Manish Dasotiya" role="Lab Admin" />
         <PeopleCard img={image} name="Parth Thacker" role="Professor" />
-        <PeopleCard img={image} name="Drasti Goswami" role="Professor" />
-        <PeopleCard img={image} name="Rita" role="Professor" />
+        <PeopleCard img={image} name="Drashti Goswami" role="Professor" />
+        <PeopleCard img={image} name="Rita Marwada" role="Professor" />
         <PeopleCard img={image} name="Sachin Doru" role="Professor" />
         <PeopleCard img={image} name="Neeraj Macchar" role="Professor" />
         <PeopleCard img={image} name="Jay Joshi" role="Professor" />
@@ -38,9 +38,9 @@ const Peoples: React.FC = () => {
 };
 
 export const metadata: Metadata = {
-  title: "Peoples: Department of Computer Science | KSKVKU",
+  title: "Faculties: Department of Computer Science | KSKVKU",
   description:
     "Prototype Website of Department of computer Science at Krantiguru Shyamji Krishna verma Kachchh university",
 };
 
-export default Peoples;
+export default Faculties;

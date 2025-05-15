@@ -23,8 +23,8 @@ const About: React.FC = () => {
         </p>
 
         <p className="py-2">
-          After in 2024, department started Batchlor of Science in Computer
-          Science (BS in CS), a four year batchlor program bassed on NEP 2023.
+          After in 2024, department started Bachelor of Science in Computer
+          Science (BS in CS), a four year bachelor program bassed on NEP 2023.
         </p>
 
         <p className="py-2">

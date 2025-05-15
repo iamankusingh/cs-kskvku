@@ -37,7 +37,7 @@ const Carousel: React.FC = () => {
 
   return (
     <div
-      className="overflow-hidden relative lg:h-[575px] lg:w-[766px] lg:rounded-xl"
+      className="lg:h-[575px] lg:w-[766px] overflow-hidden relative lg:rounded-xl"
       onMouseEnter={() => setAutoSlide(false)}
       onMouseLeave={() => setAutoSlide(true)}
     >
@@ -53,7 +53,7 @@ const Carousel: React.FC = () => {
               alt="Glimps"
               key={idx}
               priority
-              className="h-auto w-auto"
+              className="h-auto w-auto lg:h-[575px] lg:w-[766px]"
             />
           );
         })}

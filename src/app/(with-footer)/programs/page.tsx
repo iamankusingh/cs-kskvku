@@ -42,9 +42,9 @@ const Programs: React.FC = () => {
         <ProgramCard
           id="pgdcs"
           heading="PGDCA"
-          p1="The Post Graduate Diploma in Computer Applications (PGDCA) is a one-year program offering specialized knowledge in Computer Science, open to graduates from any stream. It provides a strong foundation in programming, software development, database management, and cybersecurity."
+          p1="The Post Graduate Diploma in Computer Applications (PGDCA) is a one-year program offering specialized knowledge in Computer Science, open to graduates from any stream. It provides a strong foundation in programming, software development, DBMS, and cybersecurity."
           p2="Students gain hands-on experience in full-stack development, cloud computing, AI, and data analytics, preparing them for careers as System Analysts, Software Developers, Database Admin, and IT Consultants."
-          p3="With an industry-aligned curriculum, PGDCA also serves as a pathway for higher studies like MCA and M.Sc. (IT). The program ensures graduates are job-ready with modern tech skills, making them highly sought-after in today’s digital era."
+          p3="With an industry-aligned curriculum, PGDCA also serves as a pathway for higher studies like MCA and M.Sc. (IT). The program ensures graduates are job-ready with modern tech skills, making them highly sought-after in today's digital era."
           li1="Intake : 60"
           li2="Post Graduate"
           li3="1 year Program"

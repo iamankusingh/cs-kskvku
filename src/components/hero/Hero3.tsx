@@ -11,20 +11,20 @@ const Hero3 = () => {
         <li>The Department was established in the year 2009.</li>
         <li>The Department offers five different Computer Science programs.</li>
         <li>
-          The Department is well equiped with sufficient computers for each
+          The Department is well equipped with sufficient computers for each
           student.
         </li>
         <li>
-          The Universiity campus is spread in 200 accres with lush green
+          The University campus is spread in 200 accres with lush green
           environment.
         </li>
         <li>
-          The University&apos;s library is well equiped with latest books and
+          The University&apos;s library is well equipped with latest books and
           magazines.
         </li>
-        <li>The University also provide hostel facility and mess facility.</li>
+        <li>The University also provides hostel facility and mess facility.</li>
         <li>
-          We provide education and hands on experience in different IT
+          We provide education and real-world experience with different IT
           companies.
         </li>
       </ul>

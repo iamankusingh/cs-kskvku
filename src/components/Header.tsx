@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TransitionLink } from "./TransitionLink";
 
 interface NavigationItem {
@@ -11,6 +11,8 @@ interface NavigationItem {
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [scrollingDown, setScrollingDown] = useState<boolean>(false);
+  const [lastScroll, setLastScroll] = useState<number>(0);
 
   const navigation: NavigationItem[] = [
     { title: "Home", path: "/" },
@@ -19,12 +21,36 @@ const Header: React.FC = () => {
     { title: "Courses", path: "/courses" },
     { title: "Resources", path: "/resources" },
     { title: "Facilities", path: "/facilities" },
-    { title: "Peoples", path: "/peoples" },
+    { title: "Faculties", path: "/faculties" },
     { title: "Contact", path: "/contact" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScroll) {
+        // if scroll down hide the header
+        setScrollingDown(true);
+      } else {
+        // if scroll up show the header
+        setScrollingDown(false);
+      }
+      // update current page location
+      setLastScroll(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScroll]);
+
   return (
-    <header className="p-1 lg:px-4 flex items-center justify-between md:flex-col lg:flex-row sticky top-0 bg-primary z-20">
+    <header
+      className={`p-1 lg:px-4 flex items-center justify-between md:flex-col lg:flex-row sticky duration-300 ease-in-out bg-primary z-20 ${
+        scrollingDown ? "-top-18" : "top-0"
+      }`}
+    >
       {/* logo and text */}
       <div className="flex items-center gap-1">
         <Image
@@ -54,22 +80,17 @@ const Header: React.FC = () => {
       {/* Hamburger menu */}
       <div className="md:hidden">
         <button
-          className="h-10 w-10 flex flex-col items-center justify-evenly"
+          className="h-7 w-7 flex flex-col items-center justify-around"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <div
-            className={`h-[2px] w-full origin-right duration-300 bg-black ${
-              menuOpen ? "-rotate-35" : ""
+            className={`h-[3px] w-full origin-right duration-300 bg-black ${
+              menuOpen ? "-rotate-30" : ""
             }`}
           ></div>
           <div
-            className={`h-[2px] w-full origin-right duration-300 bg-black ${
-              menuOpen ? "opacity-0" : ""
-            }`}
-          ></div>
-          <div
-            className={`h-[2px] w-full origin-right duration-300 bg-black ${
-              menuOpen ? "rotate-35" : ""
+            className={`h-[3px] w-full origin-right duration-300 bg-black ${
+              menuOpen ? "rotate-30" : ""
             }`}
           ></div>
         </button>

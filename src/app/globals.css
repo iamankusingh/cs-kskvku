@@ -23,6 +23,10 @@
     --foreground: #ededed;
   }
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
 
 body {
   background: var(--background);

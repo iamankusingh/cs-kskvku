@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "msc it",
     "pgdca",
     "bs in cs",
-    "batchlor of science in computer science",
+    "bachelor of science in computer science",
     "phd in computer science",
     "it colleg in kachchh",
   ],

@@ -6,7 +6,7 @@ import TextLine from "../TextLine";
 const Hero2 = () => {
   return (
     <section className="py-4 text-center cursor-default">
-      <TextLine text="Programs we offers" />
+      <TextLine text="Programs we offer" />
 
       <div className="p-4 flex flex-wrap justify-center gap-6 lg:gap-10">
         <Card
@@ -29,7 +29,7 @@ const Hero2 = () => {
           heading="PGDCA"
           title1="Post Graduate"
           title2="1 year program"
-          title3="After any batchlor degree"
+          title3="After any bachelor degree"
           path="/programs/#pgdcs"
         />
 
