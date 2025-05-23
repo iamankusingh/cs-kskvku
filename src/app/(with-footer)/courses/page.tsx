@@ -15,7 +15,7 @@ const Courses: React.FC = () => {
           <article>
             <h3 className="py-4 font-bold">MSC (CA & IT) Integrated :</h3>
 
-            <CourseCard sem={1} pdf="/MSC(ca_&_it)_1_2.pdf">
+            <CourseCard sem={1} pdf="/MSC(ca_it)_1_2.pdf">
               {Object.keys(cait[0]).map((key, index) => (
                 <div className="py-1 flex" key={index}>
                   <span className="w-36 border">{key}</span>
@@ -24,7 +24,7 @@ const Courses: React.FC = () => {
               ))}
             </CourseCard>
 
-            <CourseCard sem={2} pdf="/MSC(ca_&_it)_1_2.pdf">
+            <CourseCard sem={2} pdf="/MSC(ca_it)_1_2.pdf">
               {Object.keys(cait[1]).map((key, index) => (
                 <div className="py-1 flex" key={index}>
                   <span className="w-36 border">{key}</span>
@@ -33,7 +33,7 @@ const Courses: React.FC = () => {
               ))}
             </CourseCard>
 
-            <CourseCard sem={3} pdf="/MSC(ca_&_it)_3_4.pdf">
+            <CourseCard sem={3} pdf="/MSC(ca_it)_3_4.pdf">
               {Object.keys(cait[2]).map((key, index) => (
                 <div className="py-1 flex" key={index}>
                   <span className="w-36 border">{key}</span>
@@ -42,7 +42,7 @@ const Courses: React.FC = () => {
               ))}
             </CourseCard>
 
-            <CourseCard sem={4} pdf="/MSC(ca_&_it)_3_4.pdf">
+            <CourseCard sem={4} pdf="/MSC(ca_it)_3_4.pdf">
               {Object.keys(cait[3]).map((key, index) => (
                 <div className="py-1 flex" key={index}>
                   <span className="w-36 border">{key}</span>
