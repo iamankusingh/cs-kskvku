@@ -2,7 +2,25 @@ This is [Computer Science Department of KSKVKU](https://kskvku.ac.in/cs) prototy
 
 ## Getting Started
 
-First, clone this repository and run the development server by :
+First, clone this repository.
+
+```bash
+git clone https://github.com/iamankusingh/cs-kskvku.git
+```
+
+Then install dependencies.
+
+```bash
+npm i
+# or
+yarn i
+# or
+pnpm i
+# or
+bun i
+```
+
+Then run local server.
 
 ```bash
 npm run dev
