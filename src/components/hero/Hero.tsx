@@ -21,7 +21,10 @@ const Hero = () => {
           </h2>
         </div>
 
-        <Button title="About us" path="/about" />
+        <div className="flex justify-center gap-4">
+          <Button title="About us" path="/about" />
+          <Button title="Fees Structure" path="/fees" />
+        </div>
       </div>
     </section>
   );

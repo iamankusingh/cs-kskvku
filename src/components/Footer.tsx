@@ -22,7 +22,10 @@ const Footer: React.FC = () => {
             </li>
 
             <li>
-              <TransitionLink href="/programs#carrer-options" className="hover:underline">
+              <TransitionLink
+                href="/programs#carrer-options"
+                className="hover:underline"
+              >
                 Career Options
               </TransitionLink>
             </li>
@@ -31,6 +34,16 @@ const Footer: React.FC = () => {
               <TransitionLink href="/fees" className="hover:underline">
                 Fees Structure
               </TransitionLink>
+            </li>
+
+            <li>
+              <a
+                href="https://kuerp.kskvku.ac.in"
+                target="_blank"
+                className="hover:underline"
+              >
+                Student Login
+              </a>
             </li>
           </ul>
         </div>
