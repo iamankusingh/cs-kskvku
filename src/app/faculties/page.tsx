@@ -23,15 +23,23 @@ const Faculties: React.FC = () => {
 
       {/* rest of faculties */}
       <div className="md:p-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <PeopleCard img={image} name="Manish Dasotiya" role="Lab Admin" />
-        <PeopleCard img={image} name="Parth Thacker" role="Professor" />
-        <PeopleCard img={image} name="Drashti Goswami" role="Professor" />
-        <PeopleCard img={image} name="Rita Marwada" role="Professor" />
-        <PeopleCard img={image} name="Sachin Doru" role="Professor" />
-        <PeopleCard img={image} name="Neeraj Macchar" role="Professor" />
-        <PeopleCard img={image} name="Jay Joshi" role="Professor" />
-        <PeopleCard img={image} name="Manish Bhai" role="Peon" />
-        <PeopleCard img={image} name="Khyati Ben" role="Clerk" />
+        <PeopleCard
+          img={image}
+          name="Mr. Manish L. Dasotiya"
+          role="Programmer"
+        />
+        <PeopleCard img={image} name="Mr. Jay M. Joshi" role="Programmer" />
+        <PeopleCard img={image} name="Mr. Parth K. Thacker" role="Professor" />
+        <PeopleCard
+          img={image}
+          name="Miss. Drashti U. Goswami"
+          role="Professor"
+        />
+        <PeopleCard img={image} name="Mrs. Rita Marwada" role="Professor" />
+        <PeopleCard img={image} name="Mr. Sachin Doru" role="Professor" />
+        <PeopleCard img={image} name="Mr. Neeraj Macchar" role="Professor" />
+        <PeopleCard img={image} name="Mrs. Khyati C. Machchhar" role="Clerk" />
+        <PeopleCard img={image} name="Mr. Manish A. Pitroda" role="Peon" />
       </div>
     </main>
   );

@@ -108,7 +108,8 @@ const Footer: React.FC = () => {
           >
             Website&apos;s Source Code
           </a>
-        </span>
+        </span>{" "}
+        |<span className="text-red-700 font-bold"> This is a prototype website.</span>
       </div>
     </footer>
   );
