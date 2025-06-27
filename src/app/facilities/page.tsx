@@ -130,8 +130,8 @@ const Facilities: React.FC = () => {
             Spots Complex and Sports equipements
           </h4>
           Facility of all equipements like Footbal, volleyball, basketball,
-          badmintion, table tennis, cricket, etc with it's respected fields in
-          campus.
+          badmintion, table tennis, cricket, etc with it&apos;s respected fields
+          in campus.
         </li>
       </ul>
     </main>
